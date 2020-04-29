@@ -1,2 +1,3 @@
 # InstagramNovi
+	School Project
 
