@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Picture upload</title>
+</head>
+<body>
+<form action="/upload/picture" method="post" enctype="multipart/form-data">
+    <a th:href="${'/files/picture/'+ username}" role="button">Slike</a><br></br><br></br>
+    <label >Izaberi sliku: </label><br></br><br></br>
+    <input type="file" name="picture" accept="image/*"/><br></br><br></br>
+    <input type="submit" value="Spremi"/>
+</form>
+</body>
+</html>

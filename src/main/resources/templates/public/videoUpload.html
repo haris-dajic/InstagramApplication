@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Upload video</title>
+</head>
+<body>
+    <form action="/upload/video" method="post" enctype="multipart/form-data">
+        <a th:href="${'/files/video/'+ username}" role="button">Video</a><br></br><br></br>
+        <label >Izaberi video: </label><br></br><br></br>
+        <input type="file" name="video" accept="video/*"/><br></br><br></br>
+        <input type="submit" value="Spremi"/>
+    </form>
+</body>
+</html>
